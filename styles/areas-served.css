@@ -1,0 +1,160 @@
+/* Areas We Serve Section Styles */
+.areas-served {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.areas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.areas-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.areas-description {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 30px;
+}
+
+.service-areas {
+  margin-top: 20px;
+}
+
+.areas-subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.areas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.areas-list li {
+  font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.areas-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #2c5aa0;
+  font-weight: bold;
+}
+
+.cta-container {
+  margin-top: 32px;
+}
+
+.get-quote-btn {
+  display: inline-block;
+  background-color: #2c5aa0;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.get-quote-btn:hover {
+  background-color: #1e3f6b;
+}
+
+.map-section {
+  height: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .areas-served {
+    padding: 60px 0;
+  }
+  
+  .areas-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .areas-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .areas-description {
+    font-size: 16px;
+  }
+  
+  .map-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .areas-container {
+    padding: 0 16px;
+  }
+  
+  .areas-served {
+    padding: 40px 0;
+  }
+  
+  .areas-content {
+    gap: 30px;
+  }
+  
+  .map-container {
+    height: 250px;
+  }
+  
+  .get-quote-btn {
+    width: 100%;
+    text-align: center;
+  }
+} 
