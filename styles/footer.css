@@ -125,6 +125,8 @@
 
   #footer .footer-copyright {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 20px;
@@ -137,6 +139,25 @@
     line-height: 1.7;
     color: rgba(0, 166, 128, 1);
     text-align: center;
+  }
+
+  #footer .site-credit {
+    font-family: Jost, -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(0, 166, 128, 0.85);
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  #footer .site-credit a {
+    color: rgba(0, 166, 128, 1);
+    text-decoration: none;
+  }
+
+  #footer .site-credit a:hover {
+    text-decoration: underline;
   }
   
   #footer .iwd-logo{
